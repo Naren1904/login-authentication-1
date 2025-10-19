@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e9f5ec;
+  color: #2e5d4f;
+  text-align: center;
+  padding: 20px;
+}
+h1, h2 {
+  color: #1b4f38;
+}
+form input, form button {
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 16px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1b4f38;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #145227;
+}
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Woods background */
+body {
+  background: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1740&q=80') no-repeat center center fixed;
+  background-size: cover;
+  filter: brightness(90%) contrast(105%);
+}
+
+/* Page fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Main layout */
+.main-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* Solid white container with blur effect */
+.welcome-box {
+  background: #ffffff; /* Solid white */
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  backdrop-filter: blur(10px); /* Subtle blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.welcome-box:hover {
+  transform: translateY(-6px);
+  background-color: #f1f1f1; /* Light gray on hover */
+}
+
+.welcome-box h1 {
+  font-size: 2.5rem;
+  color: #2e4600; /* Dark green text for contrast */
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+.welcome-box p {
+  font-size: 1.1rem;
+  color: #52734d; /* Greenish gray text */
+  margin-bottom: 30px;
+}
+
+/* Button */
+.eco-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  background-color: #6b8e23;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.eco-btn:hover {
+  background-color: #4e6e14;
+  transform: scale(1.05);
+}
+
+
+
+
+body {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
